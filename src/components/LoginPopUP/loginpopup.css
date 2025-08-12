@@ -1,0 +1,233 @@
+.login-popup {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+  display: grid;
+}
+
+.login-popup-container {
+  position: relative;
+  place-self: center;
+  width: max(23vw, 330px);
+  color: #808080;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: fadeIn 0.5s;
+}
+
+.login-popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.crossIcon {
+  width: 16px;
+  cursor: pointer;
+}
+
+.crossIcon:hover {
+  --fa-animation-duration: 0.7s;
+}
+
+.login-popup-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-popup-inputs input {
+  outline: none;
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  border-radius: 4px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+
+
+/* .eye-icon{
+  position: absolute;
+  margin-left: 300px;
+} */
+
+.check-box{
+  accent-color: tomato;
+  margin-bottom: 17px;
+}
+
+.login-popup-container button {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background-color: tomato;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: -40px;
+}
+
+.btn-loading{
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background-color: tomato;
+  opacity: 0.8;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+
+.login-popup-condition {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: -15px;
+}
+
+.login-popup-condition input {
+  margin-top: 3px;
+}
+
+.login-popup p span {
+  color: tomato;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-popup .name-label {
+  position: absolute;
+  cursor: text;
+  background-color: #fff;
+  padding: 0 10px;
+  top: 88px;
+  left: 42px;
+  transition: all 0.3s ease;
+}
+
+input:focus + .name-label,
+input:valid + .name-label 
+ {
+  font-size: 11px;
+  top: 69.5px;
+}
+
+.login-popup .email-label {
+  position: absolute;
+  cursor: text;
+  background-color: #fff;
+  padding: 0 10px;
+  top: 148px;
+  left: 42px;
+  transition: all 0.3s ease;
+}
+
+input:focus + .email-label,
+input:valid + .email-label
+ {
+  font-size: 11px;
+  top: 129.5px;
+}
+
+.login-popup .signin-email-label {
+  position: absolute;
+  cursor: text;
+  background-color: #fff;
+  padding: 0 10px;
+  top: 88px;
+  left: 42px;
+  transition: all 0.3s ease;
+}
+
+input:focus + .signin-email-label,
+input:valid + .signin-email-label
+ {
+  font-size: 11px;
+  top: 70.5px;
+}
+
+.login-popup .password-label {
+  position: absolute;
+  cursor: text;
+  background-color: #fff;
+  padding: 0 10px;
+  top: 205px;
+  left: 42px;
+  transition: all 0.3s ease;
+}
+
+input:focus + .password-label,
+input:valid + .password-label
+ {
+  font-size: 11px;
+  top: 189.3px;
+}
+
+.login-popup .signin-password-label {
+  position: absolute;
+  cursor: text;
+  background-color: #fff;
+  padding: 0 10px;
+  top: 147px;
+  left: 42px;
+  transition: all 0.3s ease;
+}
+
+input:focus + .signin-password-label ,
+input:valid + .signin-password-label 
+{
+  font-size: 11px;
+  top: 129.5px;
+}
+
+
+.error-text{
+  color: #8a0303;
+  font-size: 19px;
+}
+
+.show-password{
+  display: flex;
+  gap: 10px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+input[type='checkbox']{
+  accent-color: tomato;
+}
+
+@media (min-width:1884px) {
+  .check-box{
+    margin-bottom: 2px;
+  }
+}
+
+/* @media (min-width:768px) {
+  .eye-icon{
+    margin-top: 22%;
+  }
+}
+
+
+@media (min-width:920px) {
+  .eye-icon{
+    margin-top: 22%;
+  }
+}
+@media (min-width:1494px) {
+  .eye-icon{
+    margin-top: 21%;
+  }
+} */
