@@ -53,9 +53,9 @@ const Navbar = ({ setShowLogin, menu, setMenu }) => {
         </a>
       </ul>
       <div className="navbar-right">
-        <Link to='/search'>
+        {/* <Link to='/search'>
         <img src={assets.search_icon} alt="search_icon" />
-        </Link>
+        </Link> */}
         <div className="navbar-search-icon">
           <Link to="/cart">
             <FontAwesomeIcon
