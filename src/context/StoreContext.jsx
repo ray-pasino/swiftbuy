@@ -9,7 +9,8 @@ const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   
   // const url = "https://finafreightserver.onrender.com"
-  const url = "http://localhost:4000";
+  // const url = "http://localhost:4000";
+  const url = "https://swiftbuyserver.onrender.com"
 
   const [token, setToken] = useState("");
   const [item_list, setItemList] = useState([]);
